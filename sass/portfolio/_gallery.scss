@@ -1,0 +1,126 @@
+.div-gallery {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-bottom: 94px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * 30px);
+  margin-left: calc(-1 * 30px);
+  transition: color 250ms var(--cubic-animation);
+}
+
+.gallery-cards {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  /* background-color: tomato; */
+}
+
+.gallery-cards:hover {
+  box-shadow: var(--shadow);
+}
+
+.gallery-cards:focus {
+  box-shadow: var(--shadow);
+}
+
+.gallery-list-link {
+  display: block;
+}
+
+.gallery-list-link:hover, .gallery-list-link:focus {
+  box-shadow: var(--shadow);
+  outline: none;
+}
+
+
+
+.gallery-thumb {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+
+.gallery-effects {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms var(--cubic-animation);
+}
+
+
+.gallery-cards:hover .gallery-effects {
+  transform: translateY(0);
+  transition: transform 250ms var(--cubic-animation);
+}
+
+
+
+.gallery-list-link:hover .gallery-effects,
+.gallery-list-link:focus .gallery-effects {
+  transform: translateY(0);
+}
+
+
+
+.gallery-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+color: var(--brand-white-color);
+padding: 63px 24px;
+}
+
+
+.gallery-text:hover .gallery-text:focus{
+  box-shadow: var(--shadow);
+  outline: none;
+  
+}
+
+
+.gallery-list .card-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.gallery-subtitle {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: var(--brand-color);
+}
+
+.gallery-items {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--brand-grey-color);
+}

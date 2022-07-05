@@ -1,0 +1,72 @@
+.benefits-section {
+    padding-top: var(--section-padding-size);
+    padding-bottom: var(--section-padding-size);
+  }
+  
+  .container .benefits {
+    display: flex;
+    align-items: center;
+  }
+  
+  .benefits-list {
+    display: flex;
+  }
+  
+  .benefits-item {
+    margin-right: 30px;
+    min-width: 270px;
+  }
+  
+  .benefits-item:last-child {
+    margin-right: 0;
+  }
+  
+  .skills-icon-antenna::before {
+    background-image: url(../images/antenna\ \(1\).svg);
+  }
+  
+  .skills-icon-astronaut::before {
+    background-image: url(../images/astronaut\ \(1\).svg);
+  }
+  
+  .skills-icon-clock::before {
+    background-image: url(../images/clock\ \(1\).svg);
+  }
+  
+  .skills-icon-diagram::before {
+    background-image: url(../images/diagram\ \(1\).svg);
+  }
+  
+  .benefits-item::before {
+    content: '';
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--brand-bg-color);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .subtitle-text {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+    margin-bottom: 10px;
+  }
+  
+  .items-2 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+    /* display: flex;
+      justify-content:space-between;  */
+  }

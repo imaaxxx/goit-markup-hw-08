@@ -1,0 +1,101 @@
+.section-portfolio {
+    padding-top: 94px;
+    /* padding-bottom: 94px; */
+  }
+  
+  .hero-button-activity {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .button-item {
+    height: 38px;
+    left: 576px;
+    top: 174px;
+  
+    background: #f5f4fa;
+    border-radius: 4px;
+  
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  /* .button-item:nth-child(2, 3, 4, 5) {
+    width: 128px;
+  } */
+  
+  .button-item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+
+  
+  .hero-btn-all {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    /* margin-right: 30px; */
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background-color: var(--brand-blue-color);
+    border: none;
+  
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+  
+    color: var(--brand-white-color);
+  
+    display: inline-block;
+    padding: 6px 22px;
+    transition: color 250ms var(--cubic-animation);
+    &:hover {
+      background-color: #188ce8;
+      box-shadow: var(--shadow);
+    }
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+  
+  
+  
+  .hero-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    /* margin-right: 30px; */
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: var(--brand-color);
+    background-color: #f5f4fa;
+    border: none;
+  
+    background: #f5f4fa;
+    border-radius: 4px;
+  
+    display: inline-block;
+    padding: 6px 22px;
+    border: none;
+    transition: color 250ms var(--cubic-animation), background-color 250ms var(--cubic-animation), box-shadow 250ms var(--cubic-animation);
+    &:hover {
+      background-color: var(--brand-blue-color);
+      color: var(--brand-white-color);
+      box-shadow: var(--shadow);
+    }
+    &:focus {
+      background-color: var(--brand-blue-color);
+      color: var(--brand-white-color);
+    }
+  }
+  
+  
+  
+  .hero-btn:focus {
+    box-shadow: var(--shadow);
+  }
+  

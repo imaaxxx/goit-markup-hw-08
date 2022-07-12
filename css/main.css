@@ -252,6 +252,9 @@ body {
 .menu-open-btn {
   display: block;
   margin-left: auto;
+  background: white;
+  outline: none;
+  border: 0;
 }
 
 .mob-menu {
@@ -277,6 +280,9 @@ body {
   display: block;
   margin-left: auto;
   margin-bottom: 10px;
+  background: white;
+  outline: none;
+  border: 0;
 }
 
 .header-mob-list:not(:last-child) {

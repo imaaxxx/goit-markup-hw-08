@@ -5,7 +5,7 @@
   }
   
   .footer .container {
-    display: flex;
+    // display: flex;
     align-items: baseline;
   }
   
@@ -166,7 +166,7 @@
   
   
   .subscribe-form {
-    display: flex;
+    // display: flex;
     align-items: flex-end;
   }
   
@@ -203,6 +203,7 @@
   
   .btn-footer {
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;

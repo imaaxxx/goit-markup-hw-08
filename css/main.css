@@ -79,12 +79,6 @@ body {
   padding-bottom: 0px;
 }
 
-.header {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
-  border-bottom: 1px solid #ececec;
-}
-
 .logo-header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -190,7 +184,11 @@ body {
 .header-navigation {
   align-items: center;
   margin-left: auto;
-  display: none;
+}
+@media screen and (max-width: 480px) {
+  .header-navigation {
+    display: none;
+  }
 }
 
 .header-item {

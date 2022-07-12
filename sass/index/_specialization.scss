@@ -1,7 +1,17 @@
 .specialization.section {
+  @media screen and (max-width: 480px) {
+    display: none;
+    }
+  
+  @media screen and (max-width: 1199px) {
+  display: none;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 0;
     padding-bottom: var(--section-padding-size);
   }
+  }
+
   
   .specialization-title {
     font-family: 'Roboto';

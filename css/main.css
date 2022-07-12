@@ -119,11 +119,6 @@ body {
   align-items: center;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
 .header-studio {
   font-weight: 500;
   font-size: 14px;
@@ -195,6 +190,7 @@ body {
 .header-navigation {
   align-items: center;
   margin-left: auto;
+  display: none;
 }
 
 .header-item {
@@ -251,6 +247,114 @@ body {
 .header-soc-icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.header-mob-list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.header-mob-studio {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.header-mob-portfolio {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.header-mob-contacts {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.header-mob-item .header-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.header-mob-item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-mob-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-soc-link {
+  margin-top: 64px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.mob-soc-link::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  top: 10px;
+  left: 85px;
+}
+
+.header-insta, .header-twitt, .header-face, .header-linkd {
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .section-hero {
@@ -705,10 +809,6 @@ body {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer .container {
-  align-items: baseline;
 }
 
 .footer-social-media {

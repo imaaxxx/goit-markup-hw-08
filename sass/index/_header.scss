@@ -151,7 +151,7 @@
     @media screen and (min-width: 768px) {
       display: flex; 
       flex-flow: column; 
-      align-items: center;
+      // align-items: center;
       gap: 10px;
     }
 
@@ -165,13 +165,17 @@
   }
   
 
-
-
-  
-
-
   .header-item {
-    margin-right: 50px;
+    
+
+    @media screen and (min-width: 768px) {
+    margin-right: 0;  
+    }
+
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
   
   
@@ -231,7 +235,16 @@
     margin-right: 10px;
   }
   
+.header-soc {
 
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
 
 
   .menu-open-btn {

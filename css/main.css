@@ -209,7 +209,6 @@ body {
   .header-tel-email {
     display: flex;
     flex-flow: column;
-    align-items: center;
     gap: 10px;
   }
 }
@@ -222,8 +221,15 @@ body {
   }
 }
 
-.header-item {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .header-item {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-item {
+    margin-right: 50px;
+  }
 }
 
 .header-contacts {
@@ -276,6 +282,17 @@ body {
 .header-soc-icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-soc {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-soc {
+    margin-left: auto;
+  }
 }
 
 .menu-open-btn {

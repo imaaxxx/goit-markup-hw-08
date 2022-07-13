@@ -822,7 +822,7 @@ body {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
 }
 
 .clients-list-item {

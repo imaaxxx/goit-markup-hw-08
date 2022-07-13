@@ -5,14 +5,17 @@
   }
   
   .footer .container {
-    // display: flex;
-    // align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
   
   
   .footer-social-media {
-    margin-left: 70px;
-    /* background: tomato; */
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
   }
   
   .footer-contacts .footer-social-media {
@@ -21,6 +24,30 @@
     box-sizing: border-box;
   }
   
+
+  .footer-contacts{
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      text-align:inherit;
+    }
+  }
+  
+
+
+.footer-connect {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+}
+
+
+
+
 
   
   .footer-email {
@@ -118,11 +145,20 @@
     line-height: 16px;
     text-transform: uppercase;
     color: var(--brand-bg-color);
+
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align:inherit;
+    }
   }
   
   .footer-sm-list {
     display: flex;
     margin-top: 20px;
+
+    justify-content: center;
+    margin-bottom: 60px;
   }
   
   .footer-sm-item {
@@ -166,8 +202,12 @@
   
   
   .subscribe-form {
-    // display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
     align-items: flex-end;
+    }
+    
+    
   }
   
   .label-footer {
@@ -183,6 +223,11 @@
   color: var(--brand-white-color);
   margin-bottom: 20px;
   display: block;
+
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
   }
   
   
@@ -195,8 +240,21 @@
   background: #2F303A;
   color: var(--brand-white-color);
   padding-left: 15px;
-  width: 358px;
+  // width: 358px;
   margin-right: 12px;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-left: 165px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+    margin-left: auto;
+  }
   }
   
   
@@ -221,6 +279,7 @@
     color: var(--brand-white-color);
     background-color: var(--brand-blue-color);
     transition: color 250ms var(--cubic-animation), background-color 250ms var(--cubic-animation);
+
   }
   
   

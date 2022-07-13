@@ -851,15 +851,40 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-social-media {
-  margin-left: 70px;
-  /* background: tomato; */
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-media {
+    margin-left: 70px;
+  }
 }
 
 .footer-contacts .footer-social-media {
   display: flex;
   align-items: baseline;
   box-sizing: border-box;
+}
+
+.footer-contacts {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    text-align: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-connect {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .footer-email {
@@ -947,11 +972,19 @@ address {
   line-height: 16px;
   text-transform: uppercase;
   color: var(--brand-bg-color);
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-sm-title {
+    text-align: inherit;
+  }
 }
 
 .footer-sm-list {
   display: flex;
   margin-top: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer-sm-item {
@@ -988,8 +1021,11 @@ address {
   margin-left: auto;
 }
 
-.subscribe-form {
-  align-items: flex-end;
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .subscribe-email {
@@ -1001,6 +1037,12 @@ address {
   color: var(--brand-white-color);
   margin-bottom: 20px;
   display: block;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-email {
+    text-align: left;
+  }
 }
 
 .email-input {
@@ -1012,8 +1054,21 @@ address {
   background: #2F303A;
   color: var(--brand-white-color);
   padding-left: 15px;
-  width: 358px;
   margin-right: 12px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .email-input {
+    width: 450px;
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .email-input {
+    margin-bottom: 0;
+    width: 358px;
+    margin-left: auto;
+  }
 }
 
 .btn-footer {

@@ -1,12 +1,32 @@
 .section-portfolio {
-    padding-top: 94px;
+    padding-top: 60px;
     /* padding-bottom: 94px; */
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+    }
   }
   
   .hero-button-activity {
     display: flex;
-    justify-content: center;
+    
     margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+      flex-wrap: wrap;
+    margin-bottom: 50px;
+    column-gap: 8px;
+    row-gap: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+    }
+
   }
   
   .button-item {

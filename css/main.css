@@ -1329,7 +1329,7 @@ address {
 }
 
 .div-gallery {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -1340,18 +1340,37 @@ address {
 }
 
 .gallery-list {
-  display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
   transition: color 250ms var(--cubic-animation);
 }
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-list {
+    display: flex;
+  }
+}
 
 .gallery-cards {
-  width: calc(33.3333333333% - 30px);
   margin-left: 30px;
   margin-top: 30px;
   /* background-color: tomato; */
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-cards {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-cards {
+    width: calc(33.3333333333% - 30px);
+  }
 }
 
 .gallery-cards:hover {
@@ -1440,14 +1459,36 @@ address {
 }
 
 .section-portfolio {
-  padding-top: 94px;
+  padding-top: 60px;
   /* padding-bottom: 94px; */
+}
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-top: 94px;
+  }
 }
 
 .hero-button-activity {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .hero-button-activity {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    column-gap: 8px;
+    row-gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-button-activity {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-button-activity {
+    justify-content: center;
+  }
 }
 
 .button-item {

@@ -271,6 +271,7 @@ height: 100vh;
 padding-top: 48px;
 padding-bottom: 48px;
 .container {
+  padding: 0 48px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -363,6 +364,7 @@ color: #757575;
   gap: 20px;
   position: relative;
 }
+
 
 
 .mob-soc-link::before {

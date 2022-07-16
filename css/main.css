@@ -1134,12 +1134,27 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  width: 290px;
   min-height: 581px;
   background-color: var(--brand-white-color);
   border-radius: 5px;
   transition: transform 250ms var(--cubic-animation);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-close-btn {
@@ -1292,17 +1307,37 @@ address {
   position: absolute;
   top: 45%;
   transform: translateY(-50%);
-  left: 10px;
+  left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .checkbox-icon {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-icon {
+    left: 10px;
+  }
 }
 
 .checkbox-label {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--brand-grey-color);
   cursor: pointer;
   margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .checkbox-label {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+  }
 }
 
 .checkbox-label a {
@@ -1470,11 +1505,13 @@ address {
 }
 
 .hero-button-activity {
-  display: flex;
+  display: grid;
   margin-bottom: 50px;
+  row-gap: 15px;
 }
 @media screen and (min-width: 480px) {
   .hero-button-activity {
+    display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
     column-gap: 8px;
@@ -1483,11 +1520,13 @@ address {
 }
 @media screen and (min-width: 768px) {
   .hero-button-activity {
+    display: flex;
     justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-button-activity {
+    display: flex;
     justify-content: center;
   }
 }

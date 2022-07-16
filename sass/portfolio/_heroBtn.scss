@@ -8,11 +8,14 @@
   }
   
   .hero-button-activity {
-    display: flex;
-    
+  
+    display: grid;
     margin-bottom: 50px;
+    row-gap: 15px;
+
 
     @media screen and (min-width: 480px) {
+      display: flex;
       flex-wrap: wrap;
     margin-bottom: 50px;
     column-gap: 8px;
@@ -20,15 +23,16 @@
     }
 
     @media screen and (min-width: 768px) {
+      display: flex;
       justify-content: center;
     }
     
     @media screen and (min-width: 1200px) {
+      display: flex;
       justify-content: center;
     }
-
   }
-  
+
   .button-item {
     height: 38px;
     left: 576px;

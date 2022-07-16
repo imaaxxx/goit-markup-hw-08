@@ -19,12 +19,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
+    width: 290px;
     min-height: 581px;
     background-color: var(--brand-white-color);
     border-radius: 5px;
     transition: transform 250ms var(--cubic-animation);
     padding: 40px;
+
+
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    }
   }
   
   
@@ -209,18 +222,35 @@
     position: absolute;
     top: 45%;
   transform: translateY(-50%);
-  left: 10px;
+  left: 0px;
+
+
+  @media screen and (min-width: 768px) {
+    left: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 10px;
+  }
+
   }
   
   
   .checkbox-label {
     font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--brand-grey-color);
   cursor: pointer;
   margin-left: 20px;
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
   }
   
   

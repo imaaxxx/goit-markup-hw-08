@@ -16,12 +16,27 @@
   .team-title {
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
     color: var(--brand-color);
+
+
+    @media screen and (min-width: 480px) {
+      font-size: 28px;
+      }
+  
+      @media screen and (min-width: 768px) {
+        font-size: 28px;
+        }
+  
+        @media screen and (min-width: 1200px) {
+          font-size: 36px;
+          }
+
+
   }
   
   .team-list {
